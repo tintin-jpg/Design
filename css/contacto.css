@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(10, 10, 10);
+  justify-content: space-between;
+  margin: 0px;
+  margin-left: 0px;
+  border: 5px solid black;
+  font-family: 'Nunito';
+  height: 100px;
+  padding: 0 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  }
+  
+header img {
+      padding: 0;
+      display: flex;
+      justify-content: space-between; 
+      padding-left: 0px ;
+  }
+  
+  .menu a{
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.4s;
+      background-color:rgb(99, 0, 0) ;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 12px 70px;
+      margin: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid black;
+      border-radius: 15px;
+      box-shadow:0 2px 5px black;
+  }
+  
+  .mostrar-menu,
+  .esconder-menu {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+      transition: 0.4s;
+  }
+  
+  .mostrar-menu{
+      order: 1;
+  }
+  
+  .menu a:hover,
+  .mostrar-menu:hover,
+  .esconder-menu:hover{
+      background-color: rgb(25, 0, 0);
+      box-shadow: 0 4px 8px black;
+      transform: translateY(2px);
+  }
+  
+  #check {
+      display: none;
+  }
+  
+  form.topnav input[type=text] {
+      float: right;
+      padding: 10px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+      border-radius: 25px;
+      background-color: #444;
+      color: #fff;
+    }
+
+body{
+    background-image:url(../img/fondo2.png);
+    background-repeat: none;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.contacto.titulo {
+  text-align: center;
+  margin-top: 60px;
+}
+.contacto-titulo h2 {
+  margin-top: 60px;
+  margin-left: 145px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Nunito';
+}
+
+.parrafo {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.parrafo p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: white;
+  font-family: "nunito";
+}
+.box {
+    position: absolute;
+    width: 1400px;
+    height: 145px;
+    left: 60px;
+    top: 130px;
+    background: #330404;
+    border-radius: 7px;
+    z-index:-1;
+  }
+
+  .gracias.titulo {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .gracias-titulo h2 {
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Nunito';
+  }
+  
+  .parrafo2 {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  .parrafo2 p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    font-family: "nunito";
+  
+  }
+  .box1 {
+      position: absolute;
+      width: 1000px;
+      height: 190px;
+      left: 300px;
+      top: 130px;
+      background: rgb(99, 0, 0) ;
+      border-radius: 7px;
+      z-index:-1;
+    }
+  
+
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  font-family: 'Nunito';
+}
+
+.formulario h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-group input:focus,
+.form textarea:focus {
+  outline: none;
+  background-color: #555;
+}
+
+.group {
+  outline: none;
+  background-color: #555;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 18px;
+  }
+
+
+  .button {
+    border-radius: 5px;
+    background-color: rgb(99, 0, 0) ;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  footer {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    font-family: 'nunito';
+  }
+  
+  footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ccc;
+  }
+
+  .mail {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mail img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 80px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .mail img:hover {
+    transform: scale(1.2);
+  }
+  .celu {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .celu img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 204px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .celu img:hover {
+    transform: scale(1.2);
+  }
+  .insta {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .insta img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 320px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .insta img:hover {
+    transform: scale(1.2);
+  }
+
+
+
+
+
+
+
+  @media only screen and (min-width: 1200px) {
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
+    }
+form.topnav input[type=text]{
+        float: right;
+        padding: 10px;
+        margin-top: 8px;
+        margin-right: 7px;
+        font-size: 14px;
+    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+    width: 600px;
+    height: 430px;
+    top: 15rem;
+}
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+    width: 0px;
+}
+}
+
+@media only screen and (max-width:1199px) and (min-width: 769px){
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
+    }
+form.topnav input[type=text]{
+        padding: 9px;
+        font-size: 12px;
+        width: 13vh;
+    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+        width: 100%;
+        height: 300px;
+      }
+
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+        width: 0px;
+    }
+
+}
+
+@media(max-width: 768px){
+header img {
+        display: block;
+    }
+form.topnav input[type=text]{
+        display: none;
+    }
+
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(10, 10, 10);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        display: block;
+        padding: 3 20px;
+        flex-direction: column;
+    }
+}

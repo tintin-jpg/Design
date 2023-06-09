@@ -1,0 +1,578 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+background-color: rgb(10, 10, 10);
+justify-content: space-between;
+margin: 0px;
+margin-left: 0px;
+border: 5px solid black;
+font-family: 'Nunito';
+height: 100px;
+padding: 0 50px;
+color: white;
+display: flex;
+align-items: center;
+}
+
+header img {
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 0px ;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+    background-color:rgb(99, 0, 0) ;
+    text-align: center;
+    display:inline-flex;
+    padding: 12px 70px;
+    margin: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow:0 2px 5px black;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    background-color: rgb(25, 0, 0);
+    box-shadow: 0 4px 8px black;
+    transform: translateY(2px);
+}
+
+#check {
+    display: none;
+}
+
+form.topnav input[type=text] {
+    float: right;
+    padding: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 25px;
+    background-color: #444;
+    color: #fff;
+  }
+
+
+
+body{
+    background-image:url(../img/fondo2.png);
+    background-repeat: none;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.ventana-modal {
+	margin: 20px auto;
+	background: rgb(99, 0, 0) ;
+	padding: 20px;
+	width: 450px;
+	line-height: 150%;
+	border-radius: 3%;
+	z-index: 100;
+	text-align: center;
+	transform: scale(1);
+	transition: 0.9s ease-in all;
+	font-family: 'Nunito';
+}
+
+.ventana-modal h1 {
+	color: white;
+	font-size: 2.5rem;
+    padding-top: 10px;
+}
+
+.ventana-modal p {
+	color: white;
+	font-size: 1.4rem;
+    padding: 30px;
+}
+
+.ventana-modal .boton {
+	background: #444 ;
+	border: none;
+	color: white;
+	text-align: center;
+	padding: 15px 100px;
+	margin-top: 20px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.ventana-modal .boton:hover {
+	background: rgb(25, 0, 0);
+}
+
+.ventana-modal .activo {
+	display: block;
+}
+
+.fondo-modal {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.9176470588);
+	height: 100vh;
+	padding-top: 100px;
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.fondo-modal.activo {
+	display: block;
+}
+
+
+
+.estreno {
+    color: white;
+    position: flex;
+    padding-top: 5.5%;
+    padding-left: 2rem;
+    font-size: 20px ;
+    display: block;
+    font-family: 'Nunito';
+}
+
+.populares {
+    color: white;
+    position: flex;
+    margin-top: -2% ;
+    padding-left: 30rem;
+    font-size: 20px ;
+    display: block;
+    font-family: 'Nunito';
+}
+
+.recomendaciones {
+    color: white;
+    position: flex;
+    margin-top: -1.9% ;
+    padding-left: 69rem;
+    font-size: 20px ;
+    display: block;
+    font-family: 'Nunito';
+}
+
+.estreno h2 {
+    position: absolute;
+    top: 200px;
+    font-size: 30px;
+}
+.imagenesestreno {
+    display: flex ;
+    flex: 1;
+    height: 60%;
+    padding: 20px;
+    position: fixed;
+    top: 10px;
+    left: 3rem;
+    cursor: pointer;
+}
+.imagenesestreno img {
+    width: 0px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s;
+    flex-basis: 100px;
+}
+.imagenesestreno img:hover {
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.populares h2 {
+    position: absolute;
+    top: 200px;
+    left: 590px;
+    font-size: 30px;
+}
+.imagenespopulares {
+    display: flex ;
+    flex: 1;
+    height: 60%;
+    width: 30%;
+    padding: 20px;
+    position: fixed;
+    top: 15rem;
+    left: 34.5rem;
+    cursor: pointer;
+}
+.imagenespopulares img{
+    width: 0px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s;
+    flex-basis: 100px;
+}
+.imagenespopulares img:hover{
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+    
+}
+.recomendaciones h2 {
+    position: absolute;
+    top: 200px;
+    right: 210px;
+    font-size: 30px;
+}
+.imagenesrecomendaciones {
+    display: flex ;
+    flex: 1;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    position: fixed;
+    top: 15rem;
+    left: 67rem;
+    cursor: pointer;
+}
+.imagenesrecomendaciones img{
+    width: 0px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s;
+    flex-basis: 100px;
+}
+.imagenesrecomendaciones img:hover {
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.button1 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    color: rgb(254, 254, 255);
+    position: absolute;
+    bottom: 80px;
+
+
+}
+.button1 a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Nunito';
+}
+
+.button1 span {
+    position: relative;
+    transition: color 0.4s;
+}
+.button1:hover span {
+    color:red ;
+}
+.button2 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    color: rgb(254, 254, 255);
+    position: absolute;
+    bottom: 80px;
+    right: 700px;
+    font-family: 'Nunito';
+}
+.button2 a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button2 span {
+    position: relative;
+    transition: color 0.4s;
+}
+.button2:hover span {
+    color:red ;
+}
+.button3 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    color: rgb(254, 254, 255);
+    position: absolute;
+    bottom: 80px;
+    right: 150px;
+    font-family: 'Nunito';
+}
+.button3 a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button3 span {
+    position: relative;
+    transition: color 0.4s;
+}
+.button3:hover span {
+    color:red ;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+footer {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    font-family: 'nunito';
+  }
+  
+footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+footer a:hover {
+    color: #ccc;
+}
+
+  .mail {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mail img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 80px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .mail img:hover {
+    transform: scale(1.2);
+  }
+  .celu {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .celu img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 204px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .celu img:hover {
+    transform: scale(1.2);
+  }
+  .insta {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .insta img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 320px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .insta img:hover {
+    transform: scale(1.2);
+  }
+
+
+
+@media only screen and (min-width: 1200px) {
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
+    }
+form.topnav input[type=text]{
+        float: right;
+        padding: 10px;
+        margin-top: 8px;
+        margin-right: 7px;
+        font-size: 14px;
+    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+    width: 600px;
+    height: 430px;
+    top: 15rem;
+}
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+    width: 0px;
+}
+}
+
+@media only screen and (max-width:1199px) and (min-width: 769px){
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
+    }
+form.topnav input[type=text]{
+        padding: 9px;
+        font-size: 12px;
+        width: 13vh;
+    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+        width: 100%;
+        height: 300px;
+      }
+
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+        width: 0px;
+    }
+
+}
+
+@media(max-width: 768px){
+header img {
+        display: block;
+    }
+form.topnav input[type=text]{
+        display: none;
+    }
+
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(10, 10, 10);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        display: block;
+        padding: 3 20px;
+        flex-direction: column;
+    }
+}
+

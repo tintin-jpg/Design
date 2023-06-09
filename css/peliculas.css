@@ -1,0 +1,518 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(10, 10, 10);
+  justify-content: space-between;
+  margin: 0px;
+  margin-left: 0px;
+  border: 5px solid black;
+  font-family: 'Nunito';
+  height: 100px;
+  padding: 0 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  }
+  
+  header img {
+      padding: 0;
+      display: flex;
+      justify-content: space-between; 
+      padding-left: 0px ;
+  }
+  
+  .menu a{
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.4s;
+      background-color:rgb(99, 0, 0) ;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 12px 70px;
+      margin: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid black;
+      border-radius: 15px;
+      box-shadow:0 2px 5px black;
+  }
+  
+  .mostrar-menu,
+  .esconder-menu {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+      transition: 0.4s;
+  }
+  
+  .mostrar-menu{
+      order: 1;
+  }
+  
+  .menu a:hover,
+  .mostrar-menu:hover,
+  .esconder-menu:hover{
+      background-color: rgb(25, 0, 0);
+      box-shadow: 0 4px 8px black;
+      transform: translateY(2px);
+  }
+  
+  #check {
+      display: none;
+  }
+  
+  form.topnav input[type=text] {
+      float: right;
+      padding: 10px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+      border-radius: 25px;
+      background-color: #444;
+      color: #fff;
+    }
+
+body {
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url(../img/fondo2.png);
+    background-repeat: none;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+ }
+
+.dropbtn {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 70px;
+  top: 50px;
+  background: #630000;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 204px;
+  height: 400px;
+  left: 70px;
+  top: 100px; 
+  background: #630000;
+  border-radius: 7px;
+  list-style: none;
+  font-size: 11px;
+  z-index: 2;
+  font-family: 'Nunito';
+  
+}
+
+.dropdown-content a {
+  color: #FFFFFF;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: block;
+  line-height : 30px;
+}
+
+.dropdown-content a:hover {background-color: #320000
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.box3 {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 305px;
+  background: #0A0A0A;
+  border-radius: 7px;
+}
+
+h2 {
+    color: white;
+    font-family: 'nunito';
+    font-size: 17PX;
+    text-align: left;
+    margin-top: 8em;
+    margin-left: 6em;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.imgestreno {
+display: flex ;
+width: 500px;
+height: 430px;
+position: fixed;
+top: 15rem;
+left: 8rem;
+
+}
+.imgestreno img {
+width: 150px;
+height: 400px;
+object-fit: contain;
+opacity: 0.8;
+transition: .5s;
+margin:4px;
+text-align: center;
+}
+.imgestreno img:hover {
+width: 300px;
+opacity: 1;
+filter: contrast(120%);
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0px;
+  margin: 0px;
+}
+.poster {
+  width: 60%;
+  margin: 50px;
+  margin-left: 100px;
+     
+}
+
+.sinopsis {
+  font-family: "nunito";
+  color: white;
+  font-size: 15px;
+  padding: 2rem;
+  max-width: 60%;
+  margin-left: 470px;
+  position: absolute;
+}
+
+.actores{
+font-family: "nunito";
+font-style: italic;
+font-weight: 800;
+color: white;
+font-size: 13px;
+padding: 2rem;
+max-width: 60%;
+margin-left: 470px;
+position: absolute;
+margin-top: 80px;
+
+}
+
+.video-container {
+  position: relative;
+  margin-top: 170px;
+  padding-bottom: 56.25%;
+  height: 60%;
+  width: 100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+  
+}
+
+h1 {
+  color: white;
+  font-family: "nunito";
+  padding-top: 4rem;
+  padding-left: 7rem;
+}
+
+.opciones {
+  justify-content: center;
+  position: absolute;
+  left: 510px;
+  top: 750px;
+}
+
+.btn {
+  background-color: #0d0d0d; 
+  border: none; 
+  color: white; 
+  padding: 9px 10px; 
+  font-size: 15px; 
+  cursor: pointer; 
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  transition: all 0.5s;
+  margin: 5px;
+
+}
+
+
+.btn:hover {
+  background-color: rgb(99, 0, 0);
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  font-family: 'nunito';
+  position: fixed;
+}
+
+  footer p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ccc;
+  }
+
+  .mail {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mail img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 80px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .mail img:hover {
+    transform: scale(1.2);
+  }
+  .celu {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .celu img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 204px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .celu img:hover {
+    transform: scale(1.2);
+  }
+  .insta {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .insta img {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    position: absolute;
+    left: 320px;
+    top: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    filter: invert(90%);
+  }
+  .insta img:hover {
+    transform: scale(1.2);
+  }
+
+
+
+
+
+  @media only screen and (min-width: 1200px) {
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
+    }
+form.topnav input[type=text]{
+        float: right;
+        padding: 10px;
+        margin-top: 8px;
+        margin-right: 7px;
+        font-size: 14px;
+    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+    width: 600px;
+    height: 430px;
+    top: 15rem;
+}
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+    width: 0px;
+}
+}
+
+@media only screen and (max-width:1199px) and (min-width: 769px){
+    .menu a{
+        text-align: center;
+        display: inline-block;
+        padding: 12px 35px;
+        margin: 10px;
+        font-size: 12px;
+    }
+form.topnav input[type=text]{
+        padding: 9px;
+        font-size: 12px;
+        width: 13vh;
+    }
+    .imagenesestreno,
+    .imagenespopulares,
+    .imagenesrecomendaciones {
+        width: 100%;
+        height: 300px;
+      }
+
+    .imagenesestreno img,
+    .imagenespopulares img,
+    .imagenesrecomendaciones img {
+        width: 0px;
+    }
+
+}
+
+@media(max-width: 768px){
+header img {
+        display: block;
+    }
+form.topnav input[type=text]{
+        display: none;
+    }
+
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(10, 10, 10);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        display: block;
+        padding: 3 20px;
+        flex-direction: column;
+    }
+}
